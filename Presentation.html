@@ -121,23 +121,12 @@
 		
 		
 		<div class="slide">
-			<h1>NoRM Basics</h1>
-			<pre class="brush:csharp">
-				var db = Mongo.Create("mongodb://localhost/test");
-				
-				// Returns IEnumerable<Scubscriber>
-				var subscribers = db.GetCollection<Subscriber>()
-					.Find(new Subscriber { FirstName = "Jim" });
-					
-				// Find with anonymous type example
-				var orders = db.GetCollection<Order>()
-					.Find(new { AccountName = "AT&T" });
-				
-				// Find from an alternately named collection
-				var customer = db.GetCollection<Customer>("customers").Find();
-			</pre>
+			<h1>Links</h1>
+			<ul>
+				<li><a href="github.com/atheken/norm">NoRM: github.com/atheken/norm</a></li>
+				<li><a href="github.com/thegrubbsian/normatic">NoRMatic: github.com/thegrubbsian/normatic</a></li>
+			</ul>
 		</div>
-		
 		
 
 		<div class="slide">
